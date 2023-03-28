@@ -10,23 +10,22 @@
 <body>
     <div class="container m-0 content-justify--center py-2">
         <div class="row text-center">
-            <h1 class="text-danger">Plantel</h1>
+            <h1 class="text-warning">Lugar</h1>
         </div>
         <form id="Registro" action="<?php echo $_SERVER['PHP_SELF']?>" nethod="POST">
         <div class="row text-center">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <input type="text" name="NombreP" class="form-control" placeholder="NombreP" required>
+                <input type="text" name="NombreLugar" class="form-control" placeholder="NombreLugar" required>
             </div>
         </div>
         <div class="row text-center">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <input type="text" name="ClaveP" class="form-control" placeholder="ClaveP
-                " required>
+                <input type="text" name="DLugar" class="form-control" placeholder="DLuagar" required>
             </div>
         </div>
         <div class="row text-center">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <textarea name="Direccion" class="form-control">Direccion</textarea>
+                <textarea name="Descripcion" class="form-control" placeholder="Descripcion"></textarea>
             </div>
         </div>
         <div class="row text-center">
@@ -36,15 +35,24 @@
         </div>
         <div class="row text-center">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <input type="Email" name="Responsable" class="form-control" placeholder="Responsable" required>
+                <input type="Email" name="Email" class="form-control" placeholder="Email" required>
             </div>
         </div>
         <div class="row text-center">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <input type="submit" value="REGISTRO" name="btn" class="btn btn-danger">
+                <input type="Face" name="Facebook" class="form-control" placeholder="Facebook" required>
             </div>
         </div>
-
+        <div class="row text-center">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <input type="Horario" name="Horario" class="form-control" placeholder="Horario" required>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <input type="submit" value="REGISTRO" name="btn" class="btn btn-warning">
+            </div>
+        </div>
     </form>
     </div>
 </body>

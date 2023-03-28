@@ -2,7 +2,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $password = "";
-$bd = "ranz";
+$bd = "proyecto";
 $conex = mysqli_connect($servidor, $usuario, $password, $bd);
 if ($conex->connect_error) {
     die("Error al conectar la base de datos".$conex->connect_error);

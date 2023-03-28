@@ -1,5 +1,6 @@
 <?php
-include "include/acciones.php";
+include "include/accionesR.php";
+include "include/conexion.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -13,7 +14,7 @@ include "include/acciones.php";
 <body>
     <div class="container m-0 content-justify--center py-2">
         <div class="row text-center">
-            <h1 class="text-succes">Registro</h1>
+            <h1 class="text-info">Registro</h1>
         </div>
         <form id="Registro" action="<?php echo $_SERVER['PHP_SELF']?>" nethod="POST">
         <div class="row text-center">
@@ -23,17 +24,21 @@ include "include/acciones.php";
         </div>
         <div class="row text-center">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <input type="text" name="Apellido" class="form-control" placeholder="Apellido" required>
+                <input type="text" name="ApellidoP" class="form-control" placeholder="ApellidoP" required>
+            </div>
+        <div class="row text-center">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <input type="text" name="ApellidoM" class="form-control" placeholder="ApellidoM" required>
             </div>
         </div>
         <div class="row text-center">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <textarea name="Direccion" class="form-control">Direccion</textarea>
+                <textarea name="Direccion" class="form-control">Direccion:</textarea>
             </div>
         </div>
         <div class="row text-center">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <input type="tel" name="Telefono" class="form-control" >
+                <input type="tel" name="Telefono" class="form-control" placeholder="Telefono" required>
             </div>
         </div>
         <div class="row text-center">

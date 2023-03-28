@@ -1,0 +1,8 @@
+CREATE TABLE ranz.Plantel
+(Id_Plantel INT AUTO_INCREMENT NOT NULL,
+Nombre_Plantel VARCHAR (55) NOT NULL,
+Clave_Plantel VARCHAR (55) NOT NULL,
+Direccion TEXT NOT NULL,
+Telefono VARCHAR (12) NOT NULL,
+Responsable TEXT NOT NULL,
+PRIMARY KEY (Id_Plantel))ENGINE=INNODB;
