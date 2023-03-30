@@ -1,12 +1,3 @@
-<?php
-include "conexion.php"
-
-
-?>php 
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="es">

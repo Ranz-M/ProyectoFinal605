@@ -1,7 +1,7 @@
-k<?php
-include "conexion.php"
+<?php
+include "include/conexion.php";
 
-$Usuarios="SELECT * FROM Usuario";
-$Ejecuta="$conexion->query($Usuarios)";
-$Separar=""
+$Usuarios = "SELECT * FROM usuarios";
+$Ejecuta = "conex->query($Usuario)";
+$Separatte = "$Ejecuta->fetch_array()";
 ?>
